@@ -1,4 +1,0 @@
-User-agent: *
-Disallow:
-
-Sitemap: https://playzero2025.sbs/sitemap.xml
