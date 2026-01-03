@@ -276,8 +276,8 @@ const GamePlayerPage: React.FC = () => {
 
   return (
     <div className="container mx-auto px-4 py-6 flex flex-col min-h-screen">
-      <button onClick={() => navigate('/')} className="flex items-center text-gray-400 hover:text-white mb-6 text-sm">
-        <ArrowLeft className="w-4 h-4 mr-2"/>Back to Home
+      <button onClick={() => navigate('/')} className="flex items-center text-gray-400 hover:text-white mb-6 text-sm group">
+        <ArrowLeft className="w-4 h-4 mr-2 group-hover:-translate-x-1 transition-transform"/>Back to Home
       </button>
       
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
@@ -289,19 +289,25 @@ const GamePlayerPage: React.FC = () => {
           </div>
 
           {/* MOBILE ADAPTATION TIP */}
-          <div className="text-center text-white bg-purple-800 p-3 rounded-lg mb-6 max-w-md mx-auto shadow-md border border-purple-600/30 flex items-center justify-center gap-2">
-            <Smartphone className="w-5 h-5" />
-            <span className="text-sm font-medium">Tip: Rotate to landscape for better experience on mobile/Chromebook!</span>
+          <div className="text-center text-white bg-purple-800 p-4 rounded-lg mb-6 max-w-md mx-auto shadow-md border border-purple-600/30 flex items-center justify-center gap-3">
+            <Smartphone className="w-6 h-6 flex-shrink-0" />
+            <span className="text-sm font-bold">Tip: Rotate to landscape mode for better mobile experience! Perfect on phone or Chromebook.</span>
           </div>
 
           {/* OPTIMIZED FULLSCREEN BUTTON */}
           <button 
             onClick={handleFullscreen} 
-            className="block mx-auto bg-green-600 hover:bg-green-700 text-white font-bold py-4 px-8 rounded-xl text-xl mb-6 shadow-lg transition-transform active:scale-95 flex items-center gap-2"
+            className="block mx-auto bg-green-600 hover:bg-green-700 text-white font-bold py-4 px-8 rounded-xl text-xl mb-6 shadow-lg transition-all active:scale-95 flex items-center gap-3"
           >
             <Maximize2 className="w-6 h-6" />
-            Play Full Screen (Press F - Best Experience!)
+            Play Full Screen (Press F - Ultimate Experience!)
           </button>
+
+          {/* FULLSCREEN TIP TEXT */}
+          <div className="text-center text-white bg-blue-800 p-4 rounded-lg mb-6 max-w-lg mx-auto border border-blue-600/30 flex items-center justify-center gap-2 font-medium">
+            <Info className="w-5 h-5 flex-shrink-0" />
+            Press F for fullscreen - No lag, full immersion on any device!
+          </div>
 
           {/* LOADING INDICATOR */}
           <div className="text-center text-gray-400 mb-4 animate-pulse flex items-center justify-center gap-2">
@@ -328,7 +334,7 @@ const GamePlayerPage: React.FC = () => {
             ></iframe>
           </div>
 
-          {/* AdSense SLOT 2 (BELOW GAME) - CENTERED */}
+          {/* AdSense SLOT 2 (NEW SLOT - BELOW GAME) - CENTERED */}
           <div className="ad-bottom mt-8 mb-4 text-center w-full">
             <AdBanner slot="2233445566" format="auto" />
           </div>
@@ -353,26 +359,26 @@ const GamePlayerPage: React.FC = () => {
               <p className="text-gray-400">{game.longContent.why2025}</p>
             </div>
             
-            {/* Strategy Text Block (SEO) */}
+            {/* Strategy Text Block (SEO Optimized) */}
             <div className="strategy mt-10 text-gray-400 p-6 bg-brand-950/50 rounded-lg border border-brand-700 italic text-sm">
               Looking for a seamless gaming experience? Play Zero Unblocked 2025 is your destination for "Zero Lag, Zero Hassle." We understand that school networks often throttle bandwidth, causing games to stutter. This site features a curated collection of lightweight HTML5 games designed to load instantly. From puzzles to quick action titles, everything here is built for speed.
               Why play here? Every game on this list has been compressed and optimized. If you are tired of loading bars getting stuck at 99%, this is your paradise. It’s perfect for those 5-minute passing periods between classes. You don't need to install any plugins or extensions; simply open your browser and enjoy smooth digital entertainment. This is the top choice for students seeking lightweight fun in 2025.
             </div>
 
-            {/* Inner Links Section (SEO) */}
+            {/* Inner Links Section (SEO Internal Links) */}
             <div className="other-games mt-10 bg-brand-950 p-8 rounded-lg border border-brand-700">
               <h3 className="text-xl font-bold text-white mb-6 border-b border-brand-700 pb-2">More Unblocked Games 2025</h3>
               <ul className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
-                <li><a href="https://snakegame.cfd" className="text-brand-400 hover:text-white transition-colors">Play Snake Game Unblocked 2025</a></li>
-                <li><a href="https://playzero2025.sbs" className="text-brand-400 hover:text-white transition-colors">Play Zero Lag Games Unblocked 2025</a></li>
-                <li><a href="https://freegames2025.sbs" className="text-brand-400 hover:text-white transition-colors">Play Free Games Unblocked 2025</a></li>
-                <li><a href="https://nodownload2025.online" className="text-brand-400 hover:text-white transition-colors">Play No Download Games Unblocked 2025</a></li>
-                <li><a href="https://unblocked2025.cfd" className="text-brand-400 hover:text-white transition-colors">Play Unblocked Games 2025 (Main)</a></li>
-                <li><a href="https://unblocked2025.sbs" className="text-brand-400 hover:text-white transition-colors">Play Best Unblocked Games 2025</a></li>
-                <li><a href="https://promax.it.com" className="text-brand-400 hover:text-white transition-colors">Play ProMax Games Unblocked 2025</a></li>
-                <li><a href="https://retrobowl2025.online" className="text-brand-400 hover:text-white transition-colors">Play Retro Bowl Unblocked 2025</a></li>
-                <li><a href="https://1v1lol2025.online" className="text-brand-400 hover:text-white transition-colors">Play 1v1.LOL Unblocked 2025</a></li>
-                <li><a href="https://drift2025.site" className="text-brand-400 hover:text-white transition-colors">Play Drift Hunters Unblocked 2025</a></li>
+                <li><a href="https://snakegame.cfd" target="_blank" className="text-brand-400 hover:text-white transition-colors">Play Snake Game Unblocked 2025</a></li>
+                <li><a href="https://playzero2025.sbs" target="_blank" className="text-brand-400 hover:text-white transition-colors">Play Zero Lag Games Unblocked 2025</a></li>
+                <li><a href="https://freegames2025.sbs" target="_blank" className="text-brand-400 hover:text-white transition-colors">Play Free Games Unblocked 2025</a></li>
+                <li><a href="https://nodownload2025.online" target="_blank" className="text-brand-400 hover:text-white transition-colors">Play No Download Games Unblocked 2025</a></li>
+                <li><a href="https://unblocked2025.cfd" target="_blank" className="text-brand-400 hover:text-white transition-colors">Play Unblocked Games 2025 (Main)</a></li>
+                <li><a href="https://unblocked2025.sbs" target="_blank" className="text-brand-400 hover:text-white transition-colors">Play Best Unblocked Games 2025</a></li>
+                <li><a href="https://promax.it.com" target="_blank" className="text-brand-400 hover:text-white transition-colors">Play ProMax Games Unblocked 2025</a></li>
+                <li><a href="https://retrobowl2025.online" target="_blank" className="text-brand-400 hover:text-white transition-colors">Play Retro Bowl Unblocked 2025</a></li>
+                <li><a href="https://1v1lol2025.online" target="_blank" className="text-brand-400 hover:text-white transition-colors">Play 1v1.LOL Unblocked 2025</a></li>
+                <li><a href="https://drift2025.site" target="_blank" className="text-brand-400 hover:text-white transition-colors">Play Drift Hunters Unblocked 2025</a></li>
               </ul>
             </div>
           </div>
