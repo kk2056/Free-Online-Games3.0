@@ -291,7 +291,7 @@ const GamePlayerPage: React.FC = () => {
           {/* MOBILE ADAPTATION TIP */}
           <div className="text-center text-white bg-purple-800 p-4 rounded-lg mb-6 max-w-md mx-auto shadow-md border border-purple-600/30 flex items-center justify-center gap-3">
             <Smartphone className="w-6 h-6 flex-shrink-0" />
-            <span className="text-sm font-bold">Tip: Rotate to landscape mode for better mobile experience! Perfect on phone or Chromebook.</span>
+            <span className="text-sm font-bold">Tip: Rotate to landscape for better mobile experience! Perfect on phone or Chromebook.</span>
           </div>
 
           {/* OPTIMIZED FULLSCREEN BUTTON */}
@@ -334,8 +334,8 @@ const GamePlayerPage: React.FC = () => {
             ></iframe>
           </div>
 
-          {/* AdSense SLOT 2 (NEW SLOT - BELOW GAME) - CENTERED */}
-          <div className="ad-bottom mt-8 mb-4 text-center w-full">
+          {/* NEW AdSense SLOT (BELOW GAME) */}
+          <div className="ad-bottom mt-8 text-center">
             <AdBanner slot="2233445566" format="auto" />
           </div>
 
